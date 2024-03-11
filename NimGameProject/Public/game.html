@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nim Game</title>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Nim Game</h1>
+        <div id="piles-container" class="d-flex flex-column align-items-center">
+        </div>
+        <div id="game-state" class="alert alert-info text-center mt-4" role="alert">
+        </div>
+        <form id="move-form" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="pileIndex" class="form-label">Pile Index:</label>
+                <input type="number" id="pileIndex" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="stones" class="form-label">Stones:</label>
+                <input type="number" id="stones" class="form-control" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Make Move</button>
+            </div>
+        </form>
+        <div id="message" class="text-danger mt-3 text-center"></div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
